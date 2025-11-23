@@ -1,5 +1,7 @@
 <div align="center">
 
+<img width="1280" height="560" src="https://github.com/user-attachments/assets/8fdfb2c4-1299-4608-a77c-4e9650a03b78" />
+
 
 # SmartEdu Tools App
 
@@ -41,16 +43,15 @@
 
    下载完成后点击即可运行，无需额外的安装步骤。
 
-2. **获取访问令牌**
-   
-   首次运行并登录「智教中国通行证」获取访问令牌；后续无需重复登录，到期自动更新。
+3. **获取访问令牌**
+
+   首次运行引导登录「智教通行证」并自动获取访问令牌；
+
+   后续无需重复登录，到期自动更新。
 
 3. **开始下载资源**
 
    在主界面选择资源分类，即可实时获取、预览并下载资源。
-
-> [!WARNING]
-> 使用过程中遇到问题，请查阅：[常见问题](#常见问题)；若问题未解决或需要帮助，请提交：[问题反馈](https://github.com/vultur/SmartEdu-Tools-App/issues/new/choose)
 
 
 ## 版本对比
@@ -67,15 +68,14 @@
 | 资源分类 | ⚠️ 基础类别（电子教材） | ✅ 全部类别（教材、课件、听力、视频课程、基础性作业等） |
 | 资源格式 | ⚠️ 基础格式（PDF） | ✅ 全部格式（PDF、PPT、MP3、MP4等） |
 | 令牌管理 | ⚠️ 手动获取 | ✅ 自动获取，到期自动更新 |
-| 内容水印 | ⚠️ 有水印 | ✅ 无水印 |
 | 批量下载 | ❌ 不支持 | ✅ 支持（按资源目录） |
 | 文档整理 | ❌ 不支持 | ✅ 支持（按资源目录） |
 | 技术支持 | ❌ 无（社区支持） | ✅ 有（支持定制） |
 
 > [!IMPORTANT]
-> **免费版**用户如需获取`全部类别`或`全部格式`的资源，请前往：[SmartEdu-Textbook](https://github.com/vultur/SmartEdu-Textbook)
+> 免费版用户如需获取全部格式的教材资源，请前往：[SmartEdu-Textbook](https://github.com/vultur/SmartEdu-Textbook)
 >
-> 根据指南获取网盘分享链接，即可免费下载所有教材资源。
+> 根据指南获取网盘分享链接，即可免费下载所有资源。
 
 
 ## 常见问题
@@ -104,4 +104,6 @@
 
 <br />
 <br />
+
+<img width="1280" height="600" src="https://github.com/user-attachments/assets/cfc7ea68-0eb5-433d-a8eb-0d1003f61da6" />
 
