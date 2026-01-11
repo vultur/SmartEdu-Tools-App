@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest, windows-11-arm64, macos-latest, macos-15-intel, ubuntu-latest, ubuntu-24.04-arm64]
+        os: [windows-latest, macos-latest]
         mode: [lite, pro]
 
     steps:
@@ -20,8 +20,6 @@ jobs:
         with:
           repository: vultur/SmartEdu-Tools
           token: ${{ secrets.ACCESS_TOKEN }}
-          fetch-depth: 0
-          persist-credentials: false
 
       - name: Setup python environment
         uses: actions/setup-python@v5
@@ -29,22 +27,13 @@ jobs:
           python-version: '3.13'
           architecture: ${{ contains(matrix.os, 'arm64') && 'ARM64' || 'x64' }}
 
-      - name: Install system dependencies (Linux Only)
-        if: startsWith(matrix.os, 'ubuntu')
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y libegl1
-        shell: bash
-
       - name: Install project dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-        shell: bash
 
       - name: Run deploy script
         run: python src/deploy.py ${{ matrix.mode }}
-        shell: bash
         env:
           PYTHONUTF8: 1
           PYTHONIOENCODING: utf-8
@@ -55,4 +44,3 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           files: dist/assets/*.*
           overwrite_files: true
-          fail_on_unmatched_files: true
