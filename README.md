@@ -68,12 +68,12 @@
       <td>⚠️ PDF</td>
     </tr>
     <tr align="center">
-      <td>批量下载</td>
+      <td>资源归档</td>
       <td>✅ 支持</td>
-      <td>❌ 不支持</td>
+      <td>✅ 支持</td>
     </tr>
     <tr align="center">
-      <td>资源归档</td>
+      <td>批量下载</td>
       <td>✅ 支持</td>
       <td>❌ 不支持</td>
     </tr>
@@ -82,24 +82,4 @@
 
 ## 常见问题
 
-**如何手动获取令牌？**
-
-> 1. 打开浏览器，访问「智慧教育公共服务平台」并登录个人账号：[点击前往](https://auth.smartedu.cn/uias/login)
-> 2. 打开**开发者工具**，点击切换到**控制台**（`Console`）选项卡
->     - 按下快捷键 `F12` 或 `Ctrl+Shift+I`（Windows）/ `Cmd+Opt+I`（macOS）；
->     - 或右键点击页面空白处，选择**检查**或**审查元素**。
-> 3. 复制以下代码，粘贴到**控制台**并按下**回车键**（`Enter`）：
->
->    ```js
->    (() => {
->       const authKey = Object.keys(localStorage).find(k => k.startsWith("ND_UC_AUTH"));
->       if (!authKey) return console.error("未找到令牌，请登录或刷新后重试！");
->       
->       const accessToken = JSON.parse(JSON.parse(localStorage.getItem(authKey)).value).access_token;
->       console.log("%c%s", "color: green; font-weight: bold", accessToken);
->     })();
->    ```
->
-> 4. 复制控制台输出的访问令牌（**绿色文本**），在 **SmartEdu Tools** 主界面完成设置
-> [!WARNING]
-> 访问令牌存在过期可能性！若下载过程中提示`令牌过期或无效`，请重新获取并更新访问令牌即可。
+请查阅 [使用教程](https://docs.qq.com/doc/DTVFCWHBNcFVZR3Ji) 或 [提交反馈](https://github.com/vultur/SmartEdu-Tools-App/issues/new/choose)
