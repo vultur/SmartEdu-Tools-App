@@ -22,7 +22,7 @@
 根据系统环境（`Windows`/`macOS`）选择对应版本，下载完成后无需安装，解压文件即可运行。
 
 - 官方下载：[最新版本](https://github.com/vultur/SmartEdu-Tools-App/releases/latest)
-- 备用地址：[网盘链接](https://pan.baidu.com/s/1PCzyFEekGdoB4wQW0w6r0A?pwd=0521)
+- 备用地址：[网盘链接](https://pan.baidu.com/s/1PCzyFEekGdoB4wQW0w6r0A?pwd=0521#list/path=%2FSmartEdu-Tools-App)
 
 ## 功能特性
 
