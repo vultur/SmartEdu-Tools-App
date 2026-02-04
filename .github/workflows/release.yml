@@ -7,13 +7,12 @@ on:
 
 jobs:
   build:
-    name: Build ${{ matrix.os }} ${{ matrix.mode }}
+    name: Build ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [windows-2025, macos-26]
-        mode: [lite, pro]
 
     steps:
       - name: Checkout code
@@ -34,7 +33,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build project
-        run: python src/deploy.py ${{ matrix.mode }}
+        run: python src/deploy.py
         env:
           PYTHONUTF8: 1
           PYTHONIOENCODING: utf-8
@@ -42,7 +41,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: build-artifact-${{ matrix.os }}-${{ matrix.mode }}
+          name: build-artifact-${{ matrix.os }}
           path: dist/assets/*
           retention-days: 1
           if-no-files-found: error
