@@ -1,0 +1,20 @@
+{
+    "options": {
+        "typeAware": true,
+        "typeCheck": true
+    },
+
+    "plugins": [
+        "eslint",
+        "typescript",
+        "react",
+        "react-perf",
+        "nextjs",
+        "import",
+        "unicorn",
+        "jsx-a11y",
+        "oxc"
+    ],
+
+    "rules": {}
+}

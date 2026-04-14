@@ -1,0 +1,6 @@
+{
+    "tabWidth": 4,
+    "sortImports": true,
+    "sortPackageJson": true,
+    "sortTailwindcss": true
+}
